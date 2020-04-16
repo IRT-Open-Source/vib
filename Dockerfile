@@ -64,4 +64,4 @@ COPY .basexhome .
 EXPOSE 8984
 
 # run BaseX
-CMD tools/basex/bin/basexhttp -d
+CMD ["tools/basex/bin/basexhttp", "-d"]
