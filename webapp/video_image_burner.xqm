@@ -99,6 +99,8 @@ declare
             <label>Output resolution:<br/>
                 <select name="resolution">
                     <option selected="selected" value="">(unchanged)</option>
+                    <option>3840x2160</option>
+                    <option>1920x1080</option>
                     <option>1280x720</option>
                     <option>960x540</option>
                     <option>640x360</option>
