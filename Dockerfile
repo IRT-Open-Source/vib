@@ -41,12 +41,12 @@ RUN wget https://www.ffmpeg.org/releases/ffmpeg-4.2.1.tar.xz -O ffmpeg.tar.xz \
  && rm -r -f ffmpeg-*
 
 # download/extract BaseX
-RUN wget http://files.basex.org/releases/9.3/BaseX93.zip -O basex.zip \
+RUN wget https://files.basex.org/releases/9.3.3/BaseX933.zip -O basex.zip \
  && unzip basex.zip -d tools \
  && rm basex.zip
 
 # download/extract/move Saxon HE 9
-RUN wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-6J.zip/download -O saxon.zip \
+RUN wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-7J.zip/download -O saxon.zip \
  && unzip saxon.zip saxon9he.jar \
  && mv saxon9he.jar tools/basex/lib/custom \
  && rm saxon.zip
